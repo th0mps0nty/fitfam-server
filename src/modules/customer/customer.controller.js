@@ -6,7 +6,7 @@ export const create = async (req, res) => {
 
   const bodySchema = Yup.object().shape({
     token: Yup.string().required(),
-    provider: Yup.object()
+    provider: Yup.string()
       .oneOf(PROVIDER_ENUM)
       .required()
   });

@@ -14,7 +14,7 @@ const CustomerSchema = new Schema(
     provider: [
       {
         uid: { required: true, type: String },
-        type: { required: true, String, enum: PROVIDER_ENUM }
+        type: { required: true, type: String, enum: PROVIDER_ENUM }
       }
     ]
   },

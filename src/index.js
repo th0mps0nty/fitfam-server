@@ -1,12 +1,12 @@
 import express from "express";
 
-import middleswaresConfig from "./config/middlewares";
+import middlewaresConfig from "./config/middlewares";
 import "./config/db";
 import { CustomerRoutes } from "./modules";
 
 const app = express();
 
-middleswaresConfig(app);
+middlewaresConfig(app);
 
 app.get("/", (req, res) => {
   res.send("Welcome");
@@ -14,10 +14,10 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/customers", CustomerRoutes);
 
-app.listen(3000, err => {
+app.listen(3001, err => {
   if (err) {
     console.log(err);
   } else {
-    console.log(`Server Listen on Port 3000`);
+    console.log(`Server Listen on Port 3001`);
   }
 });
