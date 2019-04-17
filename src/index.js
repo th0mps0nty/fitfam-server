@@ -14,10 +14,10 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/customers", CustomerRoutes);
 
-app.listen(3001, err => {
+app.listen(3000, err => {
   if (err) {
     console.log(err);
   } else {
-    console.log(`Server Listen on Port 3001`);
+    console.log(`Server Listen on Port 3000`);
   }
 });
