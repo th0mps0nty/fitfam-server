@@ -17,7 +17,7 @@ export const create = async (req, res) => {
     if (provider === "FACEBOOK") {
       const data = await AuthProvider.Facebook.authAsync(token);
       res.status(201).json(data);
-    } else if (provider === "Google") {
+    } else if (provider === "GOOGLE") {
       const data = await AuthProvider.Google.authAsync(token);
       res.status(201).json(data);
     } else {
