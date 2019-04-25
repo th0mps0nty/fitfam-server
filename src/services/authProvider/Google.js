@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://googleapis.com/userinfo/v2/me";
+const BASE_URL = "https://www.googleapis.com/userinfo/v2/me";
 
 export const authAsync = async token => {
   try {
